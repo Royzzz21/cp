@@ -1,0 +1,6 @@
+/tests/_files/tmp
+/libs
+/composer.lock
+/.idea
+/.php_cs.cache
+

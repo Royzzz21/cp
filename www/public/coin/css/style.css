@@ -1,0 +1,829 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+
+body {
+  background-color: #fff; font-size:12px; color:#555;
+  font-family: 'Roboto', Arial, Tahoma,"Noto Sans KR","Source Han Sans","본고딕","맑은 고딕","돋움","Dotum",sans-serif; 
+}
+a {color:#555}
+body.modal-open {overflow: auto !important;}
+body.modal-open[style] {padding-right: 0px !important;}
+
+.h1, .h2, .h3, h1, h2, h3 {margin:10px 0}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4 ,h5 ,h6 {color:#111}
+
+.container {width:100%}
+.navbar {background-color:#081c4d;
+      font-size: 12px !important; margin-bottom:0;
+  }
+.navbar-default, .navbar-collapse {border:none}
+.navbar .navbar-brand { color: #fff !important; }
+.navbar li a {color: #ddd !important; padding:15px 10px}
+.navbar-right li a {color:#a1ccff !important;}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #fff !important;
+  }
+.navbar-default .navbar-toggle {background:none;
+      border-color: transparent;
+      color: #fff !important;
+}
+.navbar-default .navbar-toggle .icon-bar {background-color:#fff;}
+.trade .navbar-default .rightside .glyphicons {font-size:16px;}
+.trade .navbar-default .rightside {padding:8px 4px 0 4px}
+.dropdown-menu {padding:10px 5px}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background:none}
+.navbar .navbar-nav .open .dropdown-menu,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover { background-color: #081c4d; border:none; }
+
+.font-b {font-weight:bold}
+.font-12 {font-size:12px}
+.font-14 {font-size:14px}
+.font-15 {font-size:15px}
+.font-17 {font-size:17px}
+.font-20 {font-size:20px}
+.font-24 {font-size:24px}
+.font-30 {font-size:30px}
+.font-35 {font-size:35px}
+.padding-0 {padding:0}
+.padding-10 {padding:20px 10px}
+.margin-0 {margin:0}
+.margin-10 {margin:20px 10px}
+.p-t-5 {padding-top:5px}
+.p-l-5 {padding-left:5px}
+.p-r-5 {padding-right:5px}
+.p-r-10 {padding-right:10px}
+.m-b-5 {margin-bottom:5px}
+.m-b-10 {margin-bottom:10px}
+.m-t-20 {margin-top:20px}
+.m-t-45 {margin-top:45px}
+.m-t-125 {margin-top:125px}
+.align-center {text-align:center}
+.align-right {text-align:right}
+.align-left {text-align:left}
+.down, .down a {color:#0e63c6}
+.up, .up a {color:#e52116}
+.bg-red {background-color:#d4241b; color:#fff; }
+.bg-blue {background-color:#1468c9; color:#fff; }
+.bg-ltgrey {background-color:#eee}
+.grey {color:#bbb}
+.table-bordered {border:none}
+
+
+/* Dropdown Menu =============================== */
+.dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  margin-top: 0px !important;
+  box-shadow: none; 
+  border:1px solid #ccc; }
+  .dropdown-menu .divider {
+    margin: 5px 0; }
+  .dropdown-menu .header {
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 270px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding: 4px 0 6px 0; }
+  .dropdown-menu ul.menu {
+    padding-left: 0; }
+    .dropdown-menu ul.menu.tasks h4 {
+      color: #333;
+      font-size: 13px;
+      margin: 0 0 8px 0; }
+      .dropdown-menu ul.menu.tasks h4 small {
+        float: right;
+        margin-top: 6px; }
+    .dropdown-menu ul.menu.tasks .progress {
+      height: 7px;
+      margin-bottom: 7px; }
+    .dropdown-menu ul.menu .icon-circle {
+      width: 36px;
+      height: 36px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      display: inline-block; }
+      .dropdown-menu ul.menu .icon-circle i {
+        font-size: 18px;
+        line-height: 36px; }
+    .dropdown-menu ul.menu li { }
+      .dropdown-menu ul.menu li:last-child {
+        border-bottom: none; }
+      .dropdown-menu ul.menu li a {
+        padding: 2px 8px;
+        text-decoration: none;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+        .dropdown-menu ul.menu li a:hover {
+          background-color: #e9e9e9; }
+    .dropdown-menu ul.menu .menu-info {
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      left: 5px; }
+      .dropdown-menu ul.menu .menu-info h4 {
+        margin: 0;
+        font-size: 13px;
+        color: #333; }
+      .dropdown-menu ul.menu .menu-info p {
+        margin: 0;
+        font-size: 11px;
+        color: #aaa; }
+        .dropdown-menu ul.menu .menu-info p .material-icons {
+          font-size: 13px;
+          color: #aaa;
+          position: relative;
+          top: 2px; }
+  .dropdown-menu .footer a {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 5px 0 5px 0;
+    font-size: 12px;
+    margin-bottom: -5px; }
+    .dropdown-menu .footer a:hover {
+      background-color: transparent; }
+  /*.dropdown-menu li {list-style:none}*/
+  .dropdown-menu li a {
+    color: #666;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding:2px 8px;
+    font-size: 12px; }
+    .dropdown-menu li a:hover {
+      background-color: rgba(0, 0, 0, 0.075); }
+    .dropdown-menu li a i.material-icons {
+      float: left;
+      margin-right: 7px;
+      margin-top: 2px;
+      font-size: 20px; }
+.btn-default {font-size:13px; }
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default,.btn-default.hover, .btn-default:hover,.open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {background-color: #fff}
+.orders .btn span { position: relative; 
+    top: -2px;
+    margin-left: 3px; }
+.price-wrap button span {font-weight:500; font-size:15px}
+
+
+/* Tables ====================================== */
+.table tbody tr td, .table tbody tr th {
+  padding: 4px; font-size:0.98em; vertical-align: middle;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+
+.table tbody tr.primary td, .table tbody tr.primary th {
+  background-color: #1f91f3;
+  color: #fff; }
+
+.table tbody tr.success td, .table tbody tr.success th {
+  background-color: #2b982b;
+  color: #fff; }
+
+.table tbody tr.info td, .table tbody tr.info th {
+  background-color: #00b0e4;
+  color: #fff; }
+
+.table tbody tr.warning td, .table tbody tr.warning th {
+  background-color: #ff9600;
+  color: #fff; }
+
+.table tbody tr.danger td, .table tbody tr.danger th {
+  background-color: #fb483a;
+  color: #fff; }
+
+.table thead tr th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; }
+
+.table-bordered {
+  border-top: 1px solid #fff; }
+  .table-bordered tbody tr td, .table-bordered tbody tr th {
+    padding: 10px;
+    border: 1px solid #eee; }
+  .table-bordered thead tr th {
+    padding: 10px;
+    border: 1px solid #eee; }
+.table-bordered thead tr td.bo-r-n, .table-bordered thead tr th.bo-r-n, .table-bordered tbody tr td.bo-r-n, .table-bordered tbody tr th.bo-r-n {border-right:1px solid #fff}
+.table-bordered thead tr td.bo-l-n, .table-bordered thead tr th.bo-l-n, .table-bordered tbody tr td.bo-l-n, .table-bordered tbody tr th.bo-l-n {border-left:1px solid #fff}
+
+/* Nav Tabs ==================================== */
+.right-sidebar .nav-tabs {  border-bottom: 1px dashed #ddd; }
+.right-sidebar .nav-tabs > li {
+    position: relative;
+    top: 3px;
+    left: -2px; }
+.right-sidebar .nav-tabs > li > a {font-weight:600;
+      border: none !important;
+      color: #999 !important;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+.right-sidebar .nav-tabs > li > a:hover, .right-sidebar .nav-tabs > li > a:active, .right-sidebar .nav-tabs > li > a:focus { background-color: transparent !important; }
+.right-sidebar .nav-tabs > li > a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-bottom: 2px solid #2196F3;
+        bottom: 2px;
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -moz-transition: 0.1s ease-in;
+        -o-transition: 0.1s ease-in;
+        -webkit-transition: 0.1s ease-in;
+        transition: 0.1s ease-in; }
+.right-sidebar .nav-tabs li.active a { color: #111 !important; }
+.right-sidebar .nav-tabs li.active a:hover, .right-sidebar .nav-tabs li.active a:active, .right-sidebar .nav-tabs li.active a:focus { background-color: transparent !important; }
+.right-sidebar .nav-tabs li.active a:before {
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+.right-sidebar .nav-tabs + .tab-content { padding: 15px 0; }
+
+.nav-tabs li a {color:#999; font-weight:600}
+.nav-tabs li.active a {color: #111 !important; }
+ 
+/*============ index page =================================== */  
+.visual-login {
+    /*width:100%;*/
+
+    /*height:400px;*/
+    background:url('../img/main_vbg.png') center top no-repeat;
+    /*background-size:cover;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-color: black;
+}
+.txt-box h2, .txt-box p {color:#fff; text-align:center; font-weight:300}
+.txt-box {display: table; height:400px; margin-left: auto; margin-right: auto;}
+.txt-box >div {display: table-cell; vertical-align: middle;}
+.txt-box .col-xs-12 {padding:0 6px}
+.visual-login .txt-box button.btn {font-size:1.1em; font-weight:300 }
+.visual-login .txt-box button.btn:hover, .visual-login .txt-box button.btn:active, .visual-login .txt-box button.btn:focus {background:#1e73d5; color:#fff}
+.index-chart {background-color:#1e2e54; width:100%; padding:30px 0 10px 0; overflow:hidden;}
+.index-chart div.table-responsive {padding:0 10px; overflow: hidden}
+.index-chart .table thead tr th {color:#eee; padding:5px; font-weight:400;}
+.index-chart .table tbody tr td, .index-chart .table tbody tr th {color:#eee;border:none; padding:3px; font-weight:400;}
+.index-chart .table-hover > tbody > tr:hover {background-color:#414859;}
+.index-chart .table tbody tr td.down, .index-chart .rate_down {color:#85beff}
+.index-chart .table tbody tr td.up, .index-chart .rate_up {color:#f48887}
+.rate_down, .rate_up {font-size:0.1em;}
+.index-notice {background:#f3f3f3; width:100%; height:50px; line-height:50px; text-align:center;} 
+.index-notice .tit {color:#0e63c6; display:inline-block; margin-right:5px}
+.index-notice .txt a {color:#666}
+.index-notice .more a {color:#999; display:inline-block; margin-left:10px}
+.index-trade {padding:80px 0; width:100%; overflow:hidden;}
+.index-trade div .table-responsive {padding:0;}
+.index-trade .table thead tr {border-top:1px solid #2a4a8b;}
+.index-trade .table thead tr th, .trade .table thead tr th, .table tbody th {padding:5px; font-weight:400; vertical-align: middle}
+.index-trade .table tbody tr td, .index-chart .table tbody tr th, .order-book .table tbody tr th {padding:4px; font-size:0.97em;font-weight:400;}
+.index-trade .table .align-right {padding-right:30px}
+.table tbody tr td.down, .down, .rate_down {color:#0e63c6}
+.table tbody tr td.up, .up, .rate_up {color:#e52116}
+.index-status {border:1px solid #dcdcdc; margin-bottom:15px}
+.index-trade .index-status tbody tr td {padding:20px 10px; border-bottom:0; border-top:0}
+.index-trade div button {border:1px solid #dcdcdc; background-color:#fff; color:#0e63c6}
+.index-trade div button span {font-size:20px; padding-right:5px;}
+.index-trade div button:hover {background-color:#0e63c6; color:#fff;}
+.index-guide {height:363px; width:100%; overflow:hidden; background-image: url(../img/main_pcbg.png); background-repeat:repeat-x; background-color:#f2f5f6}
+.index-guide div button {border:1px solid #dcdcdc; background-color:#fff; color:#353d53}
+.index-guide div button span {font-size:15px; padding-right:5px}
+.index-guide div button:hover {text-decoration:underline}
+.btn-lg {border-radius: 0}
+button .material-icons {vertical-align:bottom; padding-right:5px}
+.guide-pdf {padding-top:120px;}
+footer.footer {width:100%; padding:40px 0; background:#6c758c; overflow:hidden;}
+footer h3, footer li h4 a,  footer li h4 a:hover, footer h5, footer li h5 a, footer li h5 a:hover {color:#fff; }
+footer li {list-style:none;}
+footer p, footer li a, footer li a:hover {color:#ccc; }
+section.content {margin:0 auto; padding:0px 0 0 0}
+
+/*================= trade page ================================= */
+.trade .graph-wrap {border-bottom:1px solid #cacaca; padding-bottom:30px; }
+/*.trade .right-wrap, .history-book {padding-top:30px}*/
+.trade .sell-wrap {border-bottom:1px solid #cacaca; padding:0 10px}
+.trade .orders {padding:20px 0}
+.trade .graph-wrap .dropdown-menu ul.menu li {display:block; height:20px;}
+.trade .graph-wrap .dropdown-menu ul.menu li.divider {height:1px}
+.trade .graph-wrap .dropdown-menu ul.menu li a {display:inline-block; }
+.trade .top-vol {margin-top:35px}
+.trade .top-vol ul {list-style:none}
+.trade .top-vol li {line-height:30px;}
+.trade .top-vol li.b-g-1 {border-bottom:1px solid #eee}
+.trade .trade-top {border-bottom:1px dashed #ddd}
+.trade .chart-wrap {padding-top:20px; position:relative;}
+.trade .chart img {width:100%; height:100%}
+.collapsing,.chart-wrap .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-property: ;
+       -o-transition-property: ;
+          transition-property: ;
+}
+.chart-btn {position:absolute; top:3px; left:10px; border:none; font-size:11px}
+.chart-btn span {padding-left:5px;font-weight:100; color:#777}
+.trade .minichart {height:150px}
+.trade .minichart img {width:100%; height:100%}
+.up-bg {background:#eff7ff}
+.down-bg {background:#fff0ef}
+.sm-table {width:100%}
+.order-book .table tbody td:hover {cursor:pointer; outline:2px solid #26314d}
+.order-book .table tbody td.sm-twrap:hover, .order-book .table tbody td .sm-table tbody tr td:hover {cursor:default;outline:none}
+.order-book .table .sm-table tbody tr td {height:25px}
+.sm-table .b-0 {border-bottom:none}
+table.sm-table tbody tr td, table.sm-table tbody tr th {border:none; border-bottom:1px solid #eee}
+.order-book .table tbody tr td.sm-twrap {padding:0px 3px 0 0}
+.orders dl, .despoit .depo-adr dl {margin-top:10px; margin-bottom:0}
+.orders dt, .despoit .depo-adr dt {float:left; clear:left; width:20%; line-height:30px}
+.orders dd, .despoit .depo-adr dd {float:right; clear:right; width:80%; position:relative;}
+.orders input, .despoit input {border:1px solid #ddd; height:30px; vertical-align:middle; text-align:right}
+.orders button.f9 {font-size:0.9em; }
+.orders button.btn, .despoit button.btn-cp {height:30px; border-radius:0; vertical-align:middle; border-top:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.orders div.order-button button {font-size:13px; height:35px; border-radius:3px}
+.orders div.order-button button.bg-red:hover, .orders div.order-button button.bg-red:focus, .trade .despoit button.produce:hover, .trade .despoit button.produce:focus {background:#ba1810; color:#fff}
+.orders div.order-button button.bg-blue:hover, .orders div.order-button button.bg-blue:focus, .trade .withdraw button.with-apply:hover, .trade .withdraw button.with-apply:focus {background:#0f5fbc; color:#fff}
+.orders .dropdown-menu {min-width:25%; left:auto; right:0;}
+.orders button.btn i {font-size:0.9em;  }
+.orders .price-wrap button {width:12.5%; float:left}
+.orders .price-wrap button i {top:-3px}
+.orders .price-total {line-height:30px; padding-top:10px}
+.orders .price-wrap .btn span {top:0; margin-left:0}
+.minus {letter-spacing: -1px}
+.unit {font-size:0.75em; color:#777; padding-left:5px}
+.order-book .table tbody tr td {height:35px; padding:0 5px}
+.trade .history-book h6, .orders h6 {font-weight:400; margin-left:5px}
+.trad-status .nav-tabs > li {width:20%; }
+.trad-status .nav > li > a {padding:0 10px; height:40px; vertical-align: middle; text-align:center; font-size:12px}
+.history-book .nav-tabs > li {width:33.3%; }
+.history-book .tab-content {padding:5px 0}
+.history-book .nav > li > a {text-align: center}
+.history-book table.table-top, .order-non table.table-top {margin:0}
+.history-book .coin-info .coin-logo {overflow:hidden; text-align:center; margin:13px 0}
+.history-book .coin-info .coin-logo img {width:10%; padding:3px 5px 0 0;}
+.history-book .coin-info .coin-logo img, .history-book .coin-info .coin-logo h4 {float:left;}
+.history-book .coin-info h5 {color:#333; font-weight:600}
+.history-book .coin-info th {color:#444}
+.history-book .coin-info td {color:#777}
+.order-non {margin-top:30px}
+.order-non hr {display:none}
+.order-non .nav-tabs {margin-top:5px}
+.order-non>ul>li {width:33.3%}
+.order-non> div {height:300px; overflow:hidden;}
+.orders .order-non button.btn:not(.btn-link):not(.btn-circle) {height:18px}
+.order-non .nav>li>a {text-align:center; }
+.order-non .tab-content>div {text-align: center}
+.order-non .tab-content>div>ul {border:none; display:inline-block}
+.order-non .tab-content>div ul li a, .order-non .tab-content>div ul li a:hover, .order-non .tab-content>div ul li a:focus {border:none; background:#fff}
+.order-non .tab-content>div ul li > a:before {border:none}
+.order-non .tab-content .nav-tabs + .tab-content {padding:0}
+.order-non .table tbody tr td, .order-non .table tbody tr th {height:28px}
+.modal-content {border-radius:2px;}
+
+/*============ wallet page =================================== */  
+.trade .total-asset {background:#eff4f8; text-align:center; color:#fff}
+.trade .total-asset h2 {margin:0}
+.abbr {padding-left:5px; font-size:0.7em; font-weight:normal}
+.trade .tbl {border-right:3px double #eee}
+.trade .graph-wrap .table {margin-bottom:0;}
+.trade .coin-asset .table td {height:20px; line-height:10px; padding:8px 5px}
+/*.trade .coin-asset .table td.logo {padding-left:15px}
+.trade .coin-asset .btc{background:url('../img/BTC.png') no-repeat 0 40%; background-size:13px}*/
+.trade .coin-asset .table tbody tr:hover {cursor:pointer; outline:1px solid #26314d}
+.trade .despoit {padding:0 20px 10px 0}
+.trade .despoit input {text-align: center}
+.trade .despoit h4, .trade .withdraw h4 {font-size:16px; font-weight:600; padding:13px 0; margin-bottom:20px; text-align:center; background:#f4f4f4}
+.trade .despoit button.produce, .trade .withdraw button.with-apply {height:40px; border-radius:2px; width:100%; margin:10px 0}
+.trade .despoit button.btn-cp, .trade .withdraw .quan-btn button {font-size:0.9em; margin-bottom:20px}
+/*.trade .despoit dl {margin:40px 0 10px 0}*/
+.trade .despoit dt span {color:red; padding-right:3px}
+.trade .despoit dl.caution, .trade .withdraw .agree-chk {margin:0; padding:20px 0 0 0; border-top:1px solid #eee}
+.trade .despoit dl.caution dd {padding:5px 0 5px 13px}
+.trade .despoit dl.caution dd:before {content:"-"; position:absolute; left:5px}
+.trade .despoit dd.quan, .trade .withdraw dd.quan {font-size:18px; text-align: right; font-weight:bold}
+.trade .despoit .depo-issue {height:270px; margin-top:20px}
+.trade .despoit .depo-adr {height:270px; margin-top:20px; display: none}
+.withdraw .with-adr dt {width:25%}
+.withdraw .with-adr dd {width:75%}
+.withdraw .day-limit {position:relative}
+.withdraw button.limit {position:absolute; left:75px; top:2px; height:25px; width:55px; font-size:0.9em}
+.trade .withdraw dl.with-fee {padding-top:10px; border-top:1px solid #eee; margin-bottom:10px}
+.trade .withdraw .with-fee dt {width:40%; line-height:25px}
+.trade .withdraw .with-fee dd {width:60%;font-size:14px; text-align:right;}
+.withdraw .agree-chk>p {margin-bottom:3px}
+.withdraw [type=checkbox].agree {display: none;}
+.withdraw [type=checkbox].agree + label{display: inline-block; cursor: pointer; position: relative; padding-left:25px; font-size: 13px;}
+.withdraw [type=checkbox].agree + label:before {content: ""; display:inline-block; width: 18px; height:18px; position: absolute; left:0; bottom:0px; border:1px solid #bbb;}
+.withdraw input[type=checkbox]:checked + label:before {content: "\2713"; font-size:18px; font-weight:800; color: #fff; background:#0e63c6; text-align: center; line-height: 18px; }
+.trade .withdraw .agree-con {border:1px solid #ddd; padding:10px; overflow-y: scroll; height:120px}
+.trade .withdraw button.with-apply {margin-bottom:0}
+.withdraw button.with-apply.bg-blue:disabled  {background:#bbb}
+
+/*============ about us page =================================== */  
+.aboutus-top {height:180px; width:100%; background:url('../img/aboutus_bg.png') center center no-repeat; background-size:cover; display:table; margin-left: auto; margin-right: auto;}
+.aboutus-top h2 {color:#fff; text-align:center; font-weight:300; line-height:180px}
+.aboutit {color:#0b4a92}
+.aboutit br {display:none}
+.feature > div {margin:40px 4% 0 4%}
+.feature .txt, .feature p {text-align:center}
+.feature .txt h4 {padding:18px 0 5px 0}
+.about-history {padding:50px 0; width:100%; overflow:hidden; background:#f4f4f4}
+.about-history > div {margin:0 30%}
+.about-history dl {padding-right:0}
+.about-history dt, .about-history dd {font-size:13px; position:relative; height:35px; line-height:35px; padding:0}
+.about-history dt:before {content:""; position:absolute; border-left:1px solid #c5c9d3; height:180px; top:-50px; right:0;}
+.about-history dt:after {content:""; position:absolute; background:#c5c9d3; height:7px; width:7px; top:13px; right:-3px; border-radius:6px}
+.about-history dd {text-indent: 20%}
+.about-history dd:before {content:""; position:absolute; border-top:1px solid #c5c9d3; width:20%; min-width:20px; top:16px; left:0px;}
+.about-map {padding:50px 0}
+.about-map p {font-size:13px}
+.about-map .glyphicon {padding-right:5px}
+.terms {padding:50px 0}
+.terms h2 {margin-bottom:25px}
+.terms h4 {color:#111; padding-top:10px}
+.terms ol, .terms ul {list-style:none; padding:0}
+.terms ol li, .terms ul li, .terms p, .terms h5 {line-height:1.6em;}
+.terms li p {margin:0; padding-left:5px}
+.terms table th {background:#f8f8f8}
+.terms .table-bordered thead tr th, .terms .table-bordered tbody tr td, .terms .table-bordered tbody tr th {padding:7px; border-color:#ddd}
+
+/*============ guide page =================================== */ 
+.trade-guide, #faq01 {padding:0 20px 0 10px}
+.trade-guide h3, .inout-guide h3 {padding-left:10px; border-left:3px solid #1468c9}
+.trade-guide ul, .inout-guide ul {padding-left:18px}
+.trade-guide li, .inout-guide li {list-style-type : circle}
+.trade-guide .tit, .inout-guide .tit {color:#111}
+.trade-guide .table thead tr, .inout-guide .table thead tr {border-top:1px solid #2a4a8b}
+.inout-guide, #faq02 {padding:0 10px 0 20px}
+.inout-guide .table td, .inout-guide .table th {text-align:center}
+
+/*============ faq page =================================== */
+
+.faq ul {padding-left:0; border-top:1px solid #2a4a8b}
+.faq li {list-style:none; border-bottom:1px solid #eee; position:relative}
+.faq li:before {content:'Q.'; font-size:20px; color:#081c4d; position:absolute; left:5px; top:8px}
+.faq li > a {display:block; padding:6px 0 6px 30px; color:#222}
+.faq li a:after {content: "\2212"; font-size:18px; color:#ccc; position:absolute; right:10px; top:10px }
+.faq li a.collapsed:after {content: "\002B";right:10px; top:10px }
+.faq li div {padding:13px 20px 13px 25px; background:#f7f7f7; border-top:1px solid #eee}
+
+
+/* all pages 768 / 992 / 1170 (exclude : trade, wallet page)*/
+@media (max-width: 640px) {   
+    .rightside {display:none;}    
+    .order-book .table tbody tr td {height:30px; }
+    .order-book .table .sm-table tbody tr td {height:20px}
+    .txt-box h2 {font-size:30px}
+    footer.footer {padding:20px 0}
+    footer .foot-nav {padding-top:10px; border-top:1px solid #73839c}
+    .trade .coin-asset .table td {padding:5px}
+    .trade .despoit {padding:0px}
+    .trade .despoit .depo-issue, .trade .despoit .depo-adr {height:auto;}
+    .trade .tbl {border-right:none}
+    .trade .withdraw {border-top:1px solid #cacaca; padding:0}
+}
+
+@media (max-width: 767px) { 
+   section.content .visual-login {background-size:250% 100%;} 
+   section.content .index-trade {padding:50px 0 0}
+   section.content .index-guide {height:300px}
+   section.content .guide-pdf {padding-top:100px}
+   section.content .guide-img {display: none}
+   footer.footer {padding:20px 0}
+   .table-responsive {border:none;}
+   .navbar li a {padding:6px 20px}
+   .navbar li .dropdown-menu {padding:0px 10px}
+   .navbar-fixed-top .navbar-collapse {position:fixed; top:50px; right:0; bottom:0; background:#081c4d; max-width:300px; width:85%; max-height:100%; height:100% }
+   .navbar-nav {padding-top:50px}
+   .navbar-right {position:absolute; top:-53px; width:300px; border-bottom:1px solid #444}
+   .navbar-right li {float:left; padding:0 20px}
+   footer .copyright, .footer .foot-nav {margin:15px 0}
+   .trade .rightside {display:block;}
+   .trade div.top-vol {margin-top:5px}   
+   .aboutus-top {height:100px}   
+   .aboutus-top h2 {line-height:100px; font-size:22px}
+   .aboutit br {display:block}
+   .aboutus-top + div>p {font-size:17px; padding:0 15px}
+   .feature > div{width:90%; margin:20px 5% 10px 5%}
+   .feature p img {float:left; width:40%}   
+   .feature .txt {float:right; width:55%}
+   .feature .txt h4 {padding:10px 0 5px 0}
+   .about-history >div {margin:0}
+   section.content .company {padding:50px 0}    
+   .terms {padding:30px 10px}   
+   #faq01, #faq02 {padding:0}    
+        
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  section.content .guide-img div {display: none}
+  .terms {padding:20px 10px}    
+    .about-history > div {margin:0 10%}    
+}
+@media (min-width: 1170px) {    
+  nav .container, .index-chart>div, .index-notice>div, .index-trade>div, .index-guide>div, footer>div, .about-map, .terms {width:1170px; margin:0 auto }  
+  .trade nav .container, .trade section.content>div, .trade footer>div {width:100%;}    
+   
+}
+
+/* trade, wallet page 640 / 992 / 1440 */
+@media (min-width: 640px) {
+    .rightside {display:none;}
+    .trade .order-book {border-right:1px dashed #ddd}
+    .trade .orders {padding:0 0 0 10px}
+    .trade .despoit {padding:0 10px 10px 0}
+}
+
+@media (min-width: 640px) and (max-width: 768px) { 
+  .trade .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .trade .col-sm-12 {width: 100%;  }
+  .trade .col-sm-11 {width: 91.66666667%;  }
+  .trade .col-sm-10 {width: 83.33333333%;  }
+  .trade .col-sm-9 {width: 75%;  }
+  .trade .col-sm-8 {width: 66.66666667%;  }
+  .trade .col-sm-7 {width: 58.33333333%;  }
+  .trade .col-sm-6 {width: 50%;  }    
+  .trade .col-sm-5 {width: 41.66666667%;  }
+  .trade .col-sm-4 {width: 33.33333333%;  }
+  .trade .col-sm-3 {width: 25%;  }
+  .trade .col-sm-2 {width: 16.66666667%;  }         
+}
+@media (min-width: 768px) {
+    section.content .visual-login h2 br {display:none}
+    .trade .rightside {display:block; position:absolute; right:0px }
+    .trade .navbar-right {float:right; margin-right:30px}
+    .trade .graph-wrap, .trade .history-book {padding:10px}
+    .trade .orders {padding:10px 0 20px 10px}
+    .trade .right-sidebar {padding:20px 10px 20px 20px}   
+}
+@media (min-width: 992px) {
+    .trade .left-wrap {border-right:1px solid #cacaca;}    
+    .trade .graph-wrap {padding:20px 20px 20px 10px}
+    .trade .sell-wrap {padding:0 20px 0 10px}
+    .trade .orders {padding:0px 0 10px 20px}
+    .trade .history-book {padding:10px 20px 10px 10px}
+    .trade .navbar-right {margin-right:0px}
+    .trade .rightside {display:none}
+    .right-sidebar {display:block;}
+    .navbar-right {float:right; margin-right:-15px}
+    
+}
+@media (max-width : 992px) {
+   .right-sidebar{position:fixed; top:50px; right:0; bottom:0; background:#fff; max-width:300px; width:85%; height:100%; z-index:10; border-left:1px solid #cacaca;  -webkit-box-shadow:8px 8px 100px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow:8px 8px 100px rgba(0, 0, 0, 0.2);
+   -ms-box-shadow:8px 8px 100px rgba(0, 0, 0, 0.2);
+   box-shadow:8px 8px 100px rgba(0, 0, 0, 0.2);}
+   .trade-guide, .inout-guide {padding:0}    
+   .inout-guide {margin-top:20px; padding-top:20px; border-top:1px solid #ddd}    
+}
+@media (min-width: 1440px) {
+   .trade nav .container, .trade section.content>div, .trade footer>div {width:1440px; margin:0 auto }
+    .trade .graph-wrap {padding-left:0}
+    .trade .right-sidebar {padding-right:0}    
+}
+
+
+
+
+
+
+
+
+
+
+/* Left Sidebar & Overlay ====================== */
+.overlay {
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10; }
+
+.overlay-open .sidebar {
+    margin-left: 0;
+    z-index: 99999999; }
+
+.sidebar {
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: "Roboto", sans-serif;
+    background: #fdfdfd;
+    width: 300px;
+    overflow: hidden;
+    display: inline-block;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 11 !important; }
+.sidebar .legal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 15px;
+    overflow: hidden; }
+.sidebar .legal .copyright {
+    font-size: 13px;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+.sidebar .legal .copyright a {
+    font-weight: bold;
+    text-decoration: none; }
+.sidebar .legal .version {
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 13px; }
+.sidebar .user-info {
+    padding: 13px 15px 12px 15px;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
+    background: url("../images/user-img-background.jpg") no-repeat no-repeat;
+    height: 135px; }
+.sidebar .user-info .image {
+    margin-right: 12px;
+    display: inline-block; }
+.sidebar .user-info .image img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: bottom !important; }
+.sidebar .user-info .info-container {
+    cursor: default;
+    display: block;
+    position: relative;
+    top: 25px; }
+.sidebar .user-info .info-container .name {
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    max-width: 200px;
+    color: #fff; }
+.sidebar .user-info .info-container .email {
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    max-width: 200px;
+    color: #fff; }
+.sidebar .user-info .info-container .user-helper-dropdown {
+    position: absolute;
+    right: -3px;
+    bottom: -12px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: #fff; }
+.sidebar .menu {
+    position: relative;
+    overflow-y: auto;
+    height: 90vh; }
+.sidebar .menu .list {
+    list-style: none;
+    padding-left: 0; }
+.sidebar .menu .list li.active > :first-child span {
+    font-weight: bold; }
+.sidebar .menu .list .header {
+    background: #eee;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 16px; }
+.sidebar .menu .list i.material-icons {
+    margin-top: 4px; }
+.sidebar .menu .list .menu-toggle:after, .sidebar .menu .list .menu-toggle:before {
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 17px;
+    font-size: 19px;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+.sidebar .menu .list .menu-toggle:before {
+    content: '+';
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+.sidebar .menu .list .menu-toggle:after {
+    content: '\2013';
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+.sidebar .menu .list .menu-toggle.toggled:before {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+.sidebar .menu .list .menu-toggle.toggled:after {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+.sidebar .menu .list a {
+    color: #747474;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    width: 100%;
+    padding: 10px 13px; }
+.sidebar .menu .list a:hover, .sidebar .menu .list a:active, .sidebar .menu .list a:focus {
+    text-decoration: none !important; }
+.sidebar .menu .list a small {
+    position: absolute;
+    top: calc(50% - 7.5px);
+    right: 15px; }
+.sidebar .menu .list a span {
+    margin: 7px 0 7px 12px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden; }
+.sidebar .menu .list .ml-menu {
+    list-style: none;
+    display: none;
+    padding-left: 0; }
+.sidebar .menu .list .ml-menu span {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 3px 0 1px 6px; }
+.sidebar .menu .list .ml-menu li a {
+    padding-left: 55px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+.sidebar .menu .list .ml-menu li.active a.toggled:not(.menu-toggle) {
+    font-weight: 600;
+    margin-left: 5px; }
+.sidebar .menu .list .ml-menu li.active a.toggled:not(.menu-toggle):before {
+    content: '\E315';
+    font-family: 'Material Icons';
+    position: relative;
+    font-size: 21px;
+    height: 20px;
+    top: -5px;
+    right: 0px; }
+.sidebar .menu .list .ml-menu li .ml-menu li a {
+    padding-left: 80px; }
+.sidebar .menu .list .ml-menu li .ml-menu .ml-menu li a {
+    padding-left: 95px; }

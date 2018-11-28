@@ -1,0 +1,37 @@
+<?
+// 일반 게시판 생성
+		$q = "create table board_{$bbs_id} (
+                `is_secret` INT(11) NOT NULL DEFAULT '0',
+                `pw` CHAR(20) NOT NULL DEFAULT '',
+                `file_idx` INT(11) NOT NULL DEFAULT '0',
+                `start_date` INT(11) NOT NULL,
+                `end_date` INT(11) NOT NULL,
+                `link1` CHAR(255) NOT NULL,
+                `link2` CHAR(255) NOT NULL,
+                `rcpt` CHAR(20) NOT NULL,
+                `idx` INT(11) NOT NULL AUTO_INCREMENT,
+                `bbs_id` INT(11) NULL DEFAULT NULL,
+                `bbs_name` VARCHAR(20) NULL DEFAULT NULL,
+                `bbs_subject` VARCHAR(200) NULL DEFAULT NULL,
+                `bbs_content` LONGTEXT NULL,
+                `bbs_writer` VARCHAR(100) NULL DEFAULT NULL,
+                `bbs_regtt` INT(11) NULL DEFAULT NULL,
+                `bbs_file` VARCHAR(200) NULL DEFAULT NULL,
+                `bbs_hit` INT(11) NOT NULL DEFAULT '0',
+                `bbs_comment_tot` INT(11) NOT NULL DEFAULT '0',
+                `bbs_vote_up` INT(11) NOT NULL DEFAULT '0',
+                `bbs_vote_down` INT(11) NOT NULL DEFAULT '0',
+                `main_view` INT(11) NOT NULL DEFAULT '0',
+                `cat` VARCHAR(20) NOT NULL,
+                `cat0` VARCHAR(20) NOT NULL,
+                `sts` ENUM('OK','READY','STOP','DECL') NOT NULL DEFAULT 'READY',
+                `user_id` CHAR(20) NOT NULL DEFAULT '0',
+                `file_count` INT(11) NOT NULL DEFAULT '0',
+                `file_totsize` DOUBLE NOT NULL DEFAULT '0',
+                `cat_idx0` INT(11) NOT NULL DEFAULT '0',
+                `cat_idx` INT(11) NOT NULL DEFAULT '0',
+                `is_notice` INT(11) NOT NULL,
+                `user_idx` INT(11) NOT NULL,
+                PRIMARY KEY (`idx`)
+				) default charset=utf8";
+?>

@@ -4,6 +4,7 @@ namespace TLibs;
 use DB;
 use Auth;
 use Cookie;
+use Illuminate\Support\Facades\Hash;
 
 
 
@@ -82,6 +83,60 @@ class Glo {
 		}
 	}
 
+
+  function make_token($user_id){
+    // $str='ey1y23y23kh1l2h21kj3h43lkj4h';
+    $str=md5(uniqid(rand(), true));
+    $token=str_shuffle($str);
+    $this->token=$token;
+    DB::update("update users set token=? where id=?",[$token,$user_id]);
+  }
+
+
+public $token='';
+  function api_login($email,$pass){
+
+    // try Login
+    // 1. select user data
+    $rows=DB::select("select * from users where email=?",[$email]);
+    // print_r($rows);exit;
+
+    if(count($rows)>0){
+      $row=$rows[0];
+
+      // we make hashed password
+      // $input_hash_pass = Hash::make($pass);
+      $ret=Hash::check($pass,$row->password);
+
+
+
+// echo "{$input_hash_pass} == {$row->password}";
+// exit;
+
+      //!strcmp($input_hash_pass))
+      // compare password input_pass and users.password
+      // if($input_hash_pass==$row->password){
+      if($ret){
+        // if login successful
+        $this->is_logged=true;
+
+        $this->user_id=$row->id;
+        $this->user_name=$row->name;
+        $this->user_email=$row->email;
+        $this->user_role=$row->user_role;
+
+        // is admin ?
+        $this->is_admin=$this->is_admin();
+
+        $this->make_token($this->user_id);
+        // echo 1;exit;
+
+        return true;
+      }
+    }
+
+    return false;
+	}
 
     function get_auth_data(){
         if(Auth::check()) {

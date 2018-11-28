@@ -4,7 +4,7 @@ require_once __DIR__.'/../app/Config.lib.php';
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes 
+| Web Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -184,6 +184,17 @@ reg_route('/wallet','WalletCon','index');
 }
 
 
+
+
+//////////////////////
+// api
+{
+
+
+    Route::get('/api/user/{cmd}', 'APICon@api_run')->name('api.user.get');
+    Route::post('/api/user/{cmd}', 'APICon@api_run')->name('api.user.post');
+
+}
 
 
 //////////////////////

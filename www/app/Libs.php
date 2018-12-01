@@ -89,7 +89,7 @@ class Glo {
     $str=md5(uniqid(rand(), true));
     $token=str_shuffle($str);
     $this->token=$token;
-    DB::update("update users set token=? where id=?",[$token,$user_id]);
+    DB::update("update users set api_token=? where id=?",[$token,$user_id]);
   }
 
 

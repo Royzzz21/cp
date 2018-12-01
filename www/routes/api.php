@@ -14,5 +14,12 @@ use Illuminate\Http\Request;
 */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+    // return $request->user()->name;
+    // return User::where('id', '=', Auth::user()->id)->get();
 });
+
+// list of Profile data
+Route::get('profile', 'API\ProfileController@index');
+
+// update profile data
+Route::put('profile', 'API\ProfileController@store');

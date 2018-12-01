@@ -1,8 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
-use Auth;
 use DB;
+use Illuminate\Support\Facades\Auth;
 
 use App\User;
 use App\DataTables\Buttons\UsersQueryBuilderDataTable;
@@ -24,8 +24,8 @@ class APICon extends Controller{
   private function auth()
   {
 
-		// 로그인이 되어있으면.
-		// glo()->get_auth_data();
+
+		//glo()->get_auth_data();
 
 		// check if not admin and on admin page, go login
 		// glo()->check_admin_auth();
@@ -45,6 +45,7 @@ class APICon extends Controller{
         // glo()->page_obj->set_pageId('qna');
         // glo()->page_obj->set_pageName('Question &amp; Answer');
         // glo()->page_obj->set_pageDesc('');
+				$this->middleware('auth:api')->only('profile');
 	}
 
 	// 게시판 호출 처리
@@ -52,6 +53,9 @@ class APICon extends Controller{
 
 		if($cmd=='login'){
 			return $this->login($request);
+		}
+		if($cmd=='profile'){
+			return $this->profile($request);
 		}
 	}
 

@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__.'/../app/Config.lib.php';
 
 /*
@@ -193,6 +192,10 @@ reg_route('/wallet','WalletCon','index');
 
     Route::get('/api/user/{cmd}', 'APICon@api_run')->name('api.user.get');
     Route::post('/api/user/{cmd}', 'APICon@api_run')->name('api.user.post');
+    Route::middleware('auth:api')->get('/user', function (Request $request) {
+        return $request->user()->name;
+    });
+
 
 }
 
